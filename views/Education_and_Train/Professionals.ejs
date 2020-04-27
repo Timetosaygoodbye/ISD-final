@@ -1,0 +1,51 @@
+<%- include('_header') -%>
+
+<!-- Breadcrumb -->
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="/">Home</a>
+        </li>
+        <li class="breadcrumb-item">
+            <span>Education and Training</span>
+        </li>
+        <li class="breadcrumb-item" aria-current="page">
+            <a href="#"><%= title %></a>
+        </li>
+    </ol>
+</nav>
+
+<!-- Contents -->
+<div class="container-fluid">
+    <div class="row justify-content-around">
+        <!-- Secondary Navbar -->
+        <div class="col-md-3">
+            <nav class="navbar navbar-light bg-light">
+                <nav class="nav nav-pills flex-column">
+                    <a class="nav-link" href="#" role="tab"><b>Health Care Professionals</b></a>
+                    <nav class="nav nav-pills flex-column">
+                        <a class="nav-link active ml-3 my-1" id="a-tab" data-toggle="pill" href="#a"
+                            role="tab" aria-controls="a" aria-selected="true">Research Consultation, Design and Methods, Statistical</a>
+                        <a class="nav-link ml-3 my-1" id="b-tab" data-toggle="pill" href="#b" role="tab"
+                            aria-controls="b" aria-selected="false">Evidence-Based Interventions</a>
+                    </nav>
+                </nav>
+            </nav>
+        </div>
+        <!-- Content Display Area -->
+        <div class="col-md-8">
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="a" role="tabpanel" aria-labelledby="a-tab">
+                    <h1>Research Consultation, Design and Methods, Statistical</h1>
+                    <%- include('_RDS') -%>
+                </div>
+                <div class="tab-pane fade" id="b" role="tabpanel" aria-labelledby="b-tab">
+                    <h1>Evidence-Based Interventions</h1>
+                    <%- include('_EBI') -%>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- include('_footer') -%>
