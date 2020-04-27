@@ -1,0 +1,55 @@
+/* this file is loaded by index.html and styles the page */
+#logo {
+    width: 320px;
+}
+
+.breadcrumb a, .nav-pills a {
+    color: #771b67;
+}
+
+.carousel img {
+    height: 630px;
+}
+
+
+.carousel-caption {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 20;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #fff;
+    text-align: center;
+    background: rgba(0,0,0,0.5);
+}
+.nav-link.active{
+  background-color: #771b67 !important; 
+    color: #ffffff;
+}
+.dropdown-item {
+  color: #771b67 !important; 
+  background-color: #ffffff;
+}
+.dropdown-item:active{
+  background-color: #771b67 !important;
+  color: #ffffff !important;
+}
+.navbar .nav-pills .nav-link:hover{
+    background-color: #771b67 !important;
+    color: #ffffff;
+}
+hr{
+  color:#771b67 !important;
+  border-color:#771b67 !important
+}
+.card .card-header {
+    background-color: #771b67 !important;
+    color: #ffffff !important;
+}
+.btn{
+  background-color: #771b67 !important;
+  border-color:#771b67 !important;
+    color: #ffffff !important;
+}

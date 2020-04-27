@@ -1,0 +1,71 @@
+<%- include('_header') -%>
+
+<!-- Breadcrumb -->
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="/">Home</a>
+        </li>
+        <li class="breadcrumb-item">
+            <span>Research</span>
+        </li>
+        <li class="breadcrumb-item" aria-current="page">
+            <a href="#"><%= title %></a>
+        </li>
+    </ol>
+</nav>
+
+<!-- Contents -->
+<div class="container-fluid">
+    <div class="row justify-content-around">
+        <!-- Secondary Navbar -->
+        <div class="col-md-3">
+            <nav class="navbar navbar-light bg-light">
+                <nav class="nav nav-pills flex-column">
+                    <a class="nav-link" href="#" role="tab"><b>Trials</b></a>
+                    <nav class="nav nav-pills flex-column">
+                        <a class="nav-link active ml-3 my-1" id="a-tab" data-toggle="pill" href="#a"
+                            role="tab" aria-controls="a" aria-selected="true">CANCER</a>
+                        <a class="nav-link ml-3 my-1" id="b-tab" data-toggle="pill" href="#b" role="tab"
+                            aria-controls="b" aria-selected="false">KIDNEY DISEASE</a>
+                      <a class="nav-link ml-3 my-1" id="c-tab" data-toggle="pill" href="#c" role="tab"
+                            aria-controls="c" aria-selected="false">TRANSPLANT</a>
+                      <a class="nav-link ml-3 my-1" id="d-tab" data-toggle="pill" href="#d" role="tab"
+                            aria-controls="d" aria-selected="false">CAREGIVING AND BEREAVEMENT</a>
+                    </nav>
+                </nav>
+            </nav>
+        </div>
+        <!-- Content Display Area -->
+        <div class="col-md-8">
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="a" role="tabpanel" aria-labelledby="a-tab">
+                    <h1>CANCER</h1>
+                  <hr class="p-2 m-2" />
+                    <%- include('_CANCER') -%>
+                  <hr class="p-2 m-2" />
+                </div>
+                <div class="tab-pane fade" id="b" role="tabpanel" aria-labelledby="b-tab">
+                    <h1>KIDNEY DISEASE</h1>
+                  <hr class="p-2 m-2" />
+                    <%- include('_KIDNEY_DISEASE') -%>
+                  <hr class="p-2 m-2" />
+                </div>
+              <div class="tab-pane fade" id="c" role="tabpanel" aria-labelledby="c-tab">
+                    <h1>TRANSPLANT</h1>
+                <hr class="p-2 m-2" />
+                    <%- include('_TRANSPLANT') -%>
+                <hr class="p-2 m-2" />
+                </div>
+              <div class="tab-pane fade" id="d" role="tabpanel" aria-labelledby="d-tab">
+                    <h1>CAREGIVING AND BEREAVEMENT</h1>
+                <hr class="p-2 m-2" />
+                    <%- include('_CAREGIVING_BEREAVEMENT') -%>
+                <hr class="p-2 m-2" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- include('_footer') -%>
